@@ -1,0 +1,2 @@
+require("camway")
+print("hello")
