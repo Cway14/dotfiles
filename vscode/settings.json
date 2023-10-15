@@ -1,0 +1,98 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.autofetch": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.enableSmartCommit": true,
+    "editor.wordWrapColumn": 10000,
+    "html.format.wrapLineLength": 90,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "off",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "todo-tree.general.statusBar": "tags",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "json.schemas": [],
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "diffEditor.wordWrap": "off",
+    "C_Cpp.updateChannel": "Insiders",
+    "liveServer.settings.donotVerifyTags": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "git.confirmSync": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "arduino.openPDEFiletype": true,
+    "arduino.path": "/Applications",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "REVISIT",
+        "REMOVE",
+        "PRE-PRODUCTION []"
+    ],
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "editor.formatOnType": true,
+    "mssql.connections": [
+        {
+            "server": "db-designit-st.c5xlhltrw67a.us-west-2.rds.amazonaws.com",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "dic.appuser",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "Suite"
+        }
+    ],
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "bracketPairColorizer.depreciation-notice": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false,
+        "cpp": true,
+        "rust": true
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "debug.focusWindowOnBreak": false,
+    "svelte.enable-ts-plugin": true,
+    "[markdown]": {
+        "diffEditor.wordWrap": "off"
+    },
+    "jupyter.askForKernelRestart": false,
+    "errorLens.enabled": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.minimap.enabled": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.external.osxExec": "Wap.app",
+    "prettier.tabWidth": 4
+}
