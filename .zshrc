@@ -99,7 +99,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases
 
+# load aliases table
+zmodload -F zsh/parameter p:aliases
+
+alias so="source ~/.zshrc && $aliases[brewup]"
+
+# update brewfile
+alias brewup='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=$HOME/.dotfiles/Brewfile'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -110,6 +118,4 @@ if [ -e ~/.zshrc_sap ]
 then 
     echo "Sourcing SAP zshrc"
     source ~/.zshrc_sap
-else 
-    echo "SAP zshrc not found"
 fi
