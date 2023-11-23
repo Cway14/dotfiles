@@ -1,2 +1,1 @@
 require("camway")
-print("hello")

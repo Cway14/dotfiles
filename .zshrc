@@ -104,10 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # load aliases table
 zmodload -F zsh/parameter p:aliases
 
-alias so="source ~/.zshrc && $aliases[brewup]"
+alias so="source ~/.zshrc"
 
 # update brewfile
 alias brewup='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=$HOME/.dotfiles/Brewfile'
+alias dots='nvim ~/.dotfiles'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -115,7 +116,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Source SAP zshrc
 if [ -e ~/.zshrc_sap ]
-then 
-    echo "Sourcing SAP zshrc"
+then
+    echo "Sourcing SAP zshrc..."
     source ~/.zshrc_sap
 fi
