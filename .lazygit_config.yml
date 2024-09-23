@@ -1,0 +1,18 @@
+customCommands:
+  - key: '<c-p>'
+    context: 'global'
+    prompts:
+      - type: 'menu'
+        title: 'Which workstream do you want to push to?'
+        key: 'branch'
+        options:
+          - name: 'workstream_lumira'
+            value: 'workstream_lumira'
+          - name: 'workstream_infrastructure'
+            value: 'workstream_infrastructure'
+          - name: 'workstream_assistance'
+            value: 'workstream_assistance'
+          - name: 'workstream_app_building'
+            value: 'workstream_app_building'
+    command: 'git push origin HEAD:refs/for/{{.Form.branch}}'
+    loadingText: 'Pushing to workstream'
