@@ -1,7 +1,8 @@
 #! /bin/bash
 
-# install xcode command line tools
-xcode-select --install
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
 
 # install scripts
 ./brew.sh

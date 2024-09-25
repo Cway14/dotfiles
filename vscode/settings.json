@@ -1,140 +1,427 @@
 {
-    "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "git.autofetch": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "git.enableSmartCommit": true,
-    "editor.wordWrapColumn": 10000,
-    "html.format.wrapLineLength": 90,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.accessibilitySupport": "off",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "todo-tree.general.statusBar": "tags",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "json.schemas": [],
-    "workbench.iconTheme": "material-icon-theme",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDelete": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "diffEditor.wordWrap": "off",
-    "C_Cpp.updateChannel": "Insiders",
-    "liveServer.settings.donotVerifyTags": true,
-    "python.pythonPath": "/usr/local/bin/python3",
-    "git.confirmSync": false,
-    "debug.onTaskErrors": "debugAnyway",
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "arduino.openPDEFiletype": true,
-    "arduino.path": "/Applications",
-    "todo-tree.general.tags": [
-        "BUG",
-        "HACK",
-        "FIXME",
-        "TODO",
-        "XXX",
-        "[ ]",
-        "[x]",
-        "REVISIT",
-        "REMOVE",
-        "PRE-PRODUCTION []"
+    "eslint.validate": [
+        "typescript",
+        "typescriptreact"
     ],
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1"
+    "eslint.options": {
+        // "configFile": "~\\SAPDevelop\\orca_cloud\\.eslintrc.json", // should not be used
+        "resolvePluginsRelativeTo": "~\\SAPDevelop\\orca_cloud\\config\\coding\\eslint\\node_modules"
     },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "eslint.nodePath": "~\\SAPDevelop\\orca_cloud\\config\\coding\\eslint\\node_modules",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "editor.lineNumbers": "relative",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "jasmine-tests.url.Port": 8080,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "/",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                },
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                },
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.focus"
+                }
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateLeft"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateBack"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navgiateForward"
+                }
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateRight"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "a"
+            ],
+            "commands": [
+                "vscode-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+            ],
+            "commands": [
+                "vscode-harpoon.editorQuickPick"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.splitEditorLeft"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.splitEditorUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "g"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "r"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "/",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                },
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                },
+            ]
+        },
+        {
+			"before": ["<Leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<Leader>", "h"],
+			"after": ["^"]
+		},
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		}
+    ],
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "editor.inlineSuggest.enabled": true,
-    "editor.formatOnType": true,
-    "mssql.connections": [
-        {
-            "server": "db-designit-st.c5xlhltrw67a.us-west-2.rds.amazonaws.com",
-            "database": "",
-            "authenticationType": "SqlLogin",
-            "user": "dic.appuser",
-            "password": "",
-            "emptyPasswordInput": false,
-            "savePassword": true,
-            "profileName": "Suite"
-        }
+    "editor.largeFileOptimizations": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // "jestrunner.jestPath": "node_modules/jest/bin/jest",
+    "jestrunner.jestPath": "webpack/node_modules/jest/bin/jest", // for orca_cloud
+    // "jestrunner.projectPath": "webpack",
+    "jestrunner.configPath": "jest.config.js",
+    "jestrunner.runOptions": [
     ],
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "bracketPairColorizer.depreciation-notice": false,
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": false,
-        "yaml": false,
-        "cpp": true,
-        "rust": true
-    },
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "security.workspace.trust.untrustedFiles": "newWindow",
-    "debug.focusWindowOnBreak": false,
-    "svelte.enable-ts-plugin": true,
-    "[markdown]": {
-        "diffEditor.wordWrap": "off"
-    },
-    "jupyter.askForKernelRestart": false,
-    "errorLens.enabled": false,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.minimap.enabled": false,
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "workbench.colorTheme": "One Dark Pro",
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "terminal.external.osxExec": "Wap.app",
-    "prettier.tabWidth": 4,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+    "jest.enable": false,
+    "rss.accounts": {
+        "640927b0-c8ed-11ee-989c-c7f2680ea036": {
+            "name": "Default",
+            "type": "local",
+            "feeds": []
         }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>", "d"],
-            "after": ["d", "d"]
-        },
-        {
-            "before": ["<leader>", "w"],
-            "commands": [":w"]
-        },
-        {
-            "before": ["<C-n>"],
-            "commands": [":nohl"]
-        },
-        {
-            "before": ["K"],
-            "commands": ["lineBreakInsert"],
-            "silent": true
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
     },
+    "java.checkstyle.version": "",
+    "java.configuration.runtimes": [
 
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
+        {
+            "name": "JavaSE-18",
+            "path": "/home/i742619/bin/jdk-17.0.8",
+            "default": true
+        }
+    ],
+    "maven.terminal.useJavaHome": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.ai.experimental.provider": "openai",
+    "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
+    "java.debug.settings.showQualifiedNames": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.rulers": [
+       80, 120
+    ],
+    "redhat.telemetry.enabled": true,
+    "workbench.editor.showTabs": "none",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "terminal.integrated.scrollback": 1000000,
+
+    "[less]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    }
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "markiscodecoverage.searchCriteria": "build-reports/lcov*.info",
+    "files.trimTrailingWhitespaceInRegexAndStrings": false,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "editor.formatOnSaveMode": "modifications",
+    "remote.SSH.remotePlatform": {
+        "my-app.devspace": "linux"
+    },
+    "editor.linkedEditing": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "vim.smartRelativeLine": true,
+    "workbench.colorTheme": "One Dark Pro Flat",
 }
