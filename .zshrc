@@ -99,10 +99,10 @@ alias g=git
 alias d=docker
 alias l=lazygit
 alias so="source ~/.zshrc"
+alias dots='~/.dotfiles'
 
 # update brewfile
 alias brewup='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=$HOME/.dotfiles/Brewfile'
-alias dots='nvim ~/.dotfiles'
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

@@ -14,5 +14,7 @@ customCommands:
             value: 'workstream_assistance'
           - name: 'workstream_app_building'
             value: 'workstream_app_building'
+          - name: 'master (NLQ)'
+            value: 'master'
     command: 'git push origin HEAD:refs/for/{{.Form.branch}}'
     loadingText: 'Pushing to workstream'
