@@ -97,13 +97,16 @@ zmodload -F zsh/parameter p:aliases
 alias v=~/nvim-macos/bin/nvim
 alias g=git
 alias d=docker
+alias e=exit
 alias l=lazygit
 alias so="source ~/.zshrc"
 alias dots='~/.dotfiles'
+alias sleep="sudo shutdown -s now"
 
 # update brewfile
 alias brewup='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=$HOME/.dotfiles/Brewfile'
 
+export K9S_CONFIG_DIR=~/.config/k9s
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
@@ -129,3 +132,9 @@ fd() {
 fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
+
+fv() {
+  fzf | xargs nvim
+}
+
+eval "$(pyenv init --path)"

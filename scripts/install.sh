@@ -1,6 +1,7 @@
 # setup directories
 mkdir ~/.config
 mkdir ~/.nvm
+mkdir ~/.kube
 
 # install software based on OS
 if [[ "$OSTYPE" == "darwin"* ]]; then

@@ -382,10 +382,9 @@
     },
     "java.checkstyle.version": "",
     "java.configuration.runtimes": [
-
         {
-            "name": "JavaSE-18",
-            "path": "/home/i742619/bin/jdk-17.0.8",
+            "name": "JavaSE-23",
+            "path": "/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home",
             "default": true
         }
     ],
@@ -423,5 +422,6 @@
     "window.menuBarVisibility": "compact",
     "workbench.layoutControl.enabled": false,
     "vim.smartRelativeLine": true,
-    "workbench.colorTheme": "One Dark Pro Flat",
+    "window.newWindowProfile": "Default",
+    "workbench.colorTheme": "One Dark Pro Darker",
 }
