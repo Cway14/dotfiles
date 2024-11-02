@@ -228,6 +228,10 @@ if.app-id = 'company.thebrowser.Browser'
 run = ['move-node-to-workspace B']
 
 [[on-window-detected]]
+if.app-id = 'com.microsoft.edgemac'
+run = ['move-node-to-workspace B']
+
+[[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = ['move-node-to-workspace C']
 
@@ -237,7 +241,7 @@ run = ['move-node-to-workspace N']
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = ['move-node-to-workspace N']
+run = ['move-node-to-workspace S']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
@@ -256,8 +260,19 @@ A = '^(?!.*Built-in).*'
 B = '^(?!.*Built-in).*'
 C = '^(?!.*Built-in).*'
 
-T = 'Built-in'
+1 = 'Built-in'
+2 = 'Built-in'
+3 = 'Built-in'
+4 = 'Built-in'
+5 = 'Built-in'
+6 = 'Built-in'
+7 = 'Built-in'
+8 = 'Built-in'
+9 = 'Built-in'
+M = 'Built-in'
 N = 'Built-in'
+T = 'Built-in'
+V = 'Built-in'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

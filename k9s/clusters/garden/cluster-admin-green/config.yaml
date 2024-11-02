@@ -1,7 +1,7 @@
 k9s:
   cluster: garden
   namespace:
-    active: apps
+    active: dev
     lockFavorites: false
     favorites:
     - apps
@@ -9,7 +9,7 @@ k9s:
     - all
     - default
   view:
-    active: deployment
+    active: context
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
