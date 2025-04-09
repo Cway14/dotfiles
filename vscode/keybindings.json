@@ -51,5 +51,13 @@
         "key": "shift+alt+g",
         "command": "workbench.action.tasks.runTask",
         "args": "lazygit"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettingsJson"
     }
 ]

@@ -1,6 +1,6 @@
 customCommands:
   - key: '<c-p>'
-    context: 'global'
+    context: 'localBranches, remoteBranches, files, commitFiles'
     prompts:
       - type: 'menu'
         title: 'Which workstream do you want to push to?'
@@ -18,3 +18,5 @@ customCommands:
             value: 'master'
     command: 'git push origin HEAD:refs/for/{{.Form.branch}}'
     loadingText: 'Pushing to workstream'
+os:
+  editPreset: "vscode"

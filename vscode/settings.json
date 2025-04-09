@@ -24,7 +24,6 @@
     "editor.minimap.enabled": false,
     "vim.useSystemClipboard": true,
     "vim.leader": " ",
-    "editor.lineNumbers": "relative",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -97,6 +96,17 @@
             "commands": [
                 {
                     "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
                 }
             ]
         },
@@ -196,6 +206,16 @@
         },
         {
             "before": [
+                "Y"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction"
+                }
+            ]
+        },
+        {
+            "before": [
                 "<leader>",
                 "a"
             ],
@@ -219,6 +239,87 @@
             ],
             "commands": [
                 "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor4"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "5"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor5"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "6"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor6"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "7"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor7"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "8"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor8"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "9"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor9"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "10"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor10"
             ]
         },
         {
@@ -283,6 +384,16 @@
         }
     ],
     "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "Y"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction"
+                }
+            ]
+        },
         {
             "before": [
                 "<leader>",
@@ -366,8 +477,8 @@
     "editor.largeFileOptimizations": false,
     "security.workspace.trust.untrustedFiles": "open",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    // "jestrunner.jestPath": "node_modules/jest/bin/jest",
-    "jestrunner.jestPath": "webpack/node_modules/jest/bin/jest", // for orca_cloud
+    "jestrunner.jestPath": "node_modules/jest/bin/jest",
+    // "jestrunner.jestPath": "webpack/node_modules/jest/bin/jest", // for orca_cloud
     // "jestrunner.projectPath": "webpack",
     "jestrunner.configPath": "jest.config.js",
     "jestrunner.runOptions": [
@@ -381,13 +492,6 @@
         }
     },
     "java.checkstyle.version": "",
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-23",
-            "path": "/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home",
-            "default": true
-        }
-    ],
     "maven.terminal.useJavaHome": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.ai.experimental.provider": "openai",
@@ -421,7 +525,16 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "window.menuBarVisibility": "compact",
     "workbench.layoutControl.enabled": false,
-    "vim.smartRelativeLine": true,
+    "vim.smartRelativeLine": false,
     "window.newWindowProfile": "Default",
     "workbench.colorTheme": "One Dark Pro Darker",
+    "gitlens.home.preview.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "files.associations": {
+        "*.snapshot": "jest-snapshot" // requires vscode-jest extension
+    },
+    "lazygit-vscode.lazygitPath": "/opt/homebrew/bin/lazygit",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    }
 }

@@ -91,6 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+export PATH=${PATH}:/opt/homebrew/bin/lazygit
+
 # load aliases table
 zmodload -F zsh/parameter p:aliases
 
