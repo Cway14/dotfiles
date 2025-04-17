@@ -1,6 +1,6 @@
 customCommands:
   - key: '<c-p>'
-    context: 'localBranches, remoteBranches, files, commitFiles'
+    context: 'localBranches, remoteBranches, files'
     prompts:
       - type: 'menu'
         title: 'Which workstream do you want to push to?'
@@ -20,3 +20,7 @@ customCommands:
     loadingText: 'Pushing to workstream'
 os:
   editPreset: "vscode"
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --line-numbers --side-by-side --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
