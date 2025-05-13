@@ -18,3 +18,10 @@ Thumbs.db
 
 # karabiner elements backups
 /karabiner/automatic_backups
+
+# Misc dev files
+**/tsconfig.json
+
+# So I can store project specific files without Git
+**.local
+
