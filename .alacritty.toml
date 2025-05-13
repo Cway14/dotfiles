@@ -4,7 +4,7 @@ import = ["/Users/mischa/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
 
 [font]
-size = 15
+size = 14
 
 [font.normal]
 family = "UbuntuMono Nerd Font"
