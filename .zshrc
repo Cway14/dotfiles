@@ -101,13 +101,23 @@ alias g=git
 alias d=docker
 alias e=exit
 alias l=lazygit
+alias ds="gh dash"
 alias so="source ~/.zshrc"
-alias dots='~/.dotfiles'
 alias sleep="sudo shutdown -s now"
+
+alias dots='~/.dotfiles'
+alias config='~/.config'
 
 # update brewfile
 alias brewup='echo "Updating Brewfile..." && brew bundle dump --force --describe --file=$HOME/.dotfiles/Brewfile'
 
+export PATH=$PATH:~/.dotfiles/scripts
+
+export EDITOR=nvim
+export VISUAL="$EDITOR"
+
+export XDG_CONFIG_HOME=~/.config
+export NODE_COMPILE_CACHE=.cache/nodejs-compile-cache
 export K9S_CONFIG_DIR=~/.config/k9s
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
