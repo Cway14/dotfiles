@@ -20,3 +20,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cd $TMP_DOTFILES_SCRIPTS_DIR
 ./nvim.sh
 ./symlinks.sh
+
+crontab ./cron/cron.txt
