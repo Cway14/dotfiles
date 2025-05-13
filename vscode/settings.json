@@ -39,6 +39,9 @@
     "jasmine-tests.url.Port": 8080,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
+    "vim.handleKeys": {
+        "<C-n>": false,
+    },
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -126,6 +129,17 @@
                 "<leader>",
                 "f",
                 "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                },
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<leader>"
             ],
             "commands": [
                 {
@@ -455,6 +469,29 @@
             ]
         },
         {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                },
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                },
+            ]
+        },
+        {
 			"before": ["<Leader>", "l"],
 			"after": ["$"]
 		},
@@ -469,7 +506,115 @@
 		{
 			"before": ["K"],
 			"after": ["5", "k"]
-		}
+		},
+        {
+            "before": [
+                "<leader>",
+                "a"
+            ],
+            "commands": [
+                "vscode-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+            ],
+            "commands": [
+                "vscode-harpoon.editorQuickPick"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor4"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "5"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor5"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "6"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor6"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "7"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor7"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "8"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor8"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "9"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor9"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "10"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor10"
+            ]
+        },
     ],
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -527,7 +672,7 @@
     "workbench.layoutControl.enabled": false,
     "vim.smartRelativeLine": false,
     "window.newWindowProfile": "Default",
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.colorTheme": "One Dark Pro",
     "gitlens.home.preview.enabled": false,
     "editor.accessibilitySupport": "off",
     "files.associations": {
@@ -536,5 +681,12 @@
     "lazygit-vscode.lazygitPath": "/opt/homebrew/bin/lazygit",
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false
-    }
+    },
+    "find-it-faster.general.useTerminalInEditor": true,
+    "find-it-faster.general.killTerminalAfterUse": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "chat.agent.enabled": true,
+    "github.copilot.chat.languageContext.typescript.enabled": true,
+    "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true
 }
