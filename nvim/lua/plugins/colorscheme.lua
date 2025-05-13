@@ -1,9 +1,13 @@
 return {
-  { "folke/tokyonight.nvim" },
-
   {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "moon" },
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
+  },
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "onedark",
+    },
   },
 }
