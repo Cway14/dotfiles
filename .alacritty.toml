@@ -1,8 +1,3 @@
-# themes from https://github.com/alacritty/alacritty-theme
-
-import = ["/Users/mischa/.config/alacritty/themes/themes/gruvbox_dark.toml"]
-
-
 [font]
 size = 14
 
@@ -17,3 +12,7 @@ blur = true
 [window.padding]
 x = 7
 y = 10
+
+[general]
+import = ["/Users/mischa/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
