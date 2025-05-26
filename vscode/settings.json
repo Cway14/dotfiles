@@ -383,7 +383,17 @@
                 "g"
             ],
             "commands": [
-                "workbench.view.scm"
+                "lazygit-vscode.toggle"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.openGlobalKeybindings"
             ]
         },
         {
@@ -398,6 +408,26 @@
         }
     ],
     "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "g"
+            ],
+            "commands": [
+                "lazygit-vscode.toggle"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.openGlobalKeybindings"
+            ]
+        },
         {
             "before": [
                 "Y"
@@ -688,5 +718,15 @@
     "chat.agent.enabled": true,
     "github.copilot.chat.languageContext.typescript.enabled": true,
     "github.copilot.chat.languageContext.inline.typescript.enabled": true,
-    "github.copilot.chat.languageContext.fix.typescript.enabled": true
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "https://sonar.tools.sap",
+            "connectionId": "https-sonar-tools-sap-"
+        }
+    ],
+    "sonarlint.focusOnNewCode": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
