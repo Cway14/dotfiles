@@ -1,0 +1,1 @@
+ln -sfF $ZSH/gh-dash $XDG_CONFIG_HOME

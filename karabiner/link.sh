@@ -1,0 +1,1 @@
+ln -sfF $ZSH/karabiner $XDG_CONFIG_HOME

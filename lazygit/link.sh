@@ -1,0 +1,1 @@
+ln -sfF $ZSH/lazygit $XDG_CONFIG_HOME

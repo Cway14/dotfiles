@@ -1,0 +1,1 @@
+ln -sfF $ZSH/k9s $XDG_CONFIG_HOME

@@ -1,27 +1,2 @@
-# Compiled Python files
-*.pyc
-
-# Log files
-*.log
-
-# Folder view configuration files
-.DS_Store
-Desktop.ini
-
-# Thumbnail cache files
-._*
-Thumbs.db
-
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
-
-# karabiner elements backups
-/karabiner/automatic_backups
-
-# Misc dev files
-**/tsconfig.json
-
-# So I can store project specific files without Git
-**.local
-
+git/gitconfig.local.symlink
+Brewfile.lock.json
