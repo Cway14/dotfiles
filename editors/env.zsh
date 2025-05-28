@@ -1,1 +1,2 @@
-export EDITOR='windsurf'
+export EDITOR=nvim
+export VISUAL="$EDITOR"

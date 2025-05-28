@@ -1,0 +1,5 @@
+#!/bin/sh
+
+fv() {
+  fzf | xargs nvim
+}
