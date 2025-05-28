@@ -728,5 +728,6 @@
     "sonarlint.focusOnNewCode": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh"
 }
