@@ -1,2 +1,0 @@
-PATH=/usr/local/bin:/usr/bin:/bin
-@daily /Users/I742619/.dotfiles/scripts/cron/cron.sh

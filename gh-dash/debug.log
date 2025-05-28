@@ -1,0 +1,18 @@
+8:21AM DEBU <cmd/root.go:63> Logging to debug.log
+8:21AM DEBU <cmd/root.go:65> Running in repo repo=/Users/I742619/.config/gh-dash
+8:21AM DEBU <keys/keys.go:206> Rebinding universal keys keys=[]
+8:21AM DEBU <theme/theme.go:171> Parsing theme config="&{Ui:{SectionsShowCount:true Table:{ShowSeparator:true Compact:false}} Colors:<nil> Icons:<nil>}" theme="&{SelectedBackground:{Light:006 Dark:008} PrimaryBorder:{Light:013 Dark:008} FaintBorder:{Light:254 Dark:000} SecondaryBorder:{Light:008 Dark:007} FaintText:{Light:007 Dark:245} PrimaryText:{Light:000 Dark:015} SecondaryText:{Light:244 Dark:251} InvertedText:{Light:015 Dark:236} SuccessText:{Light:002 Dark:002} WarningText:{Light:003 Dark:003} ErrorText:{Light:001 Dark:001} NewContributorIconColor:{Light:077 Dark:077} ContributorIconColor:{Light:075 Dark:075} CollaboratorIconColor:{Light:178 Dark:178} MemberIconColor:{Light:178 Dark:178} OwnerIconColor:{Light:178 Dark:178} UnknownRoleIconColor:{Light:178 Dark:178} NewContributorIcon:\U000f0394 ContributorIcon:\uedc6 CollaboratorIcon:\uedcf MemberIcon:\uf42b OwnerIcon:\U000f11d0 UnknownRoleIcon:\U000f1421}"
+8:21AM DEBU <ui/ui.go:76> Starting task id="fetching_prs_1_2025-05-03 08:21:10.282247 -0700 PDT m=+0.046240501"
+8:21AM DEBU <ui/ui.go:76> Starting task id="fetching_prs_2_2025-05-03 08:21:10.306107 -0700 PDT m=+0.070100126"
+8:21AM DEBU <ui/ui.go:76> Starting task id="fetching_prs_3_2025-05-03 08:21:10.33007 -0700 PDT m=+0.094063668"
+8:21AM DEBU <data/prapi.go:271> Fetching PRs query="is:open review-requested:@me" limit=20 endCursor=<nil>
+8:21AM DEBU <data/prapi.go:271> Fetching PRs query="is:open author:@me" limit=20 endCursor=<nil>
+8:21AM DEBU <data/prapi.go:271> Fetching PRs query="is:open involves:@me -author:@me" limit=20 endCursor=<nil>
+8:21AM DEBU <data/prapi.go:276> Successfully fetched PRs count=2
+8:21AM DEBU <ui/ui.go:519> Task finished id="fetching_prs_1_2025-05-03 08:21:10.282247 -0700 PDT m=+0.046240501"
+8:21AM DEBU <data/prapi.go:276> Successfully fetched PRs count=6
+8:21AM DEBU <ui/ui.go:519> Task finished id="fetching_prs_3_2025-05-03 08:21:10.33007 -0700 PDT m=+0.094063668"
+8:21AM DEBU <data/prapi.go:276> Successfully fetched PRs count=9
+8:21AM DEBU <ui/ui.go:519> Task finished id="fetching_prs_2_2025-05-03 08:21:10.306107 -0700 PDT m=+0.070100126"
+8:21AM DEBU <ui/ui.go:171> Key pressed key=:
+8:21AM DEBU <ui/ui.go:171> Key pressed key=q

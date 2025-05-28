@@ -1,0 +1,380 @@
+[90m12:06PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:06PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:06PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to activate context \"\": getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:06PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:06PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused\nunable to activate context \"\": getcontext - invalid context specified: \"\"\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:06PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:06PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:06PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mConn check failed (5/5). Bailing out![0m
+[90m12:06PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:06PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:06PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:07PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to activate context \"\": getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused\nunable to activate context \"\": getcontext - invalid context specified: \"\"\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:07PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mConn check failed (5/5). Bailing out![0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:07PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to activate context \"\": getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused\nunable to activate context \"\": getcontext - invalid context specified: \"\"\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:07PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:07PM[0m [31mERR[0m [1mConn check failed (5/5). Bailing out![0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:07PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:07PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:19PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:19PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to activate context \"\": getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:19PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:19PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/api\": dial tcp [::1]:8080: connect: connection refused\nunable to activate context \"\": getcontext - invalid context specified: \"\"\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:19PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:19PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:19PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:19PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:19PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:19PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:19PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:19PM[0m [33mWRN[0m [1mPlugins load failed: getcontext - invalid context specified: ""[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"http://localhost:8080/version?timeout=15s\": dial tcp [::1]:8080: connect: connection refused"[0m[0m
+[90m12:19PM[0m [31mERR[0m [1mConn check failed (5/5). Bailing out![0m
+[90m12:19PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:19PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"getcontext - invalid context specified: \"\""[0m[0m
+[90m12:19PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:23PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\nunable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:23PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mWatcher failed for contexts -- error loading config file "/Users/I742619/.kube/config": read /Users/I742619/.kube/config: is a directory[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:23PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\nunable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:23PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mWatcher failed for contexts -- error loading config file "/Users/I742619/.kube/config": read /Users/I742619/.kube/config: is a directory[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [31mERR[0m [1mConn check failed (5/5). Bailing out![0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:23PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:23PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:24PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:24PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mconfig refine failed[0m [36merror=[0m[31m[1m"unable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:24PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:24PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\nunable to retrieve kubeconfig current context \"\": fail to load rawConfig: error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory\ncannot connect to context: \nk8s connection failed for context: "[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mWatcher failed for contexts -- error loading config file "/Users/I742619/.kube/config": read /Users/I742619/.kube/config: is a directory[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mWatcher failed for contexts -- error loading config file "/Users/I742619/.kube/config": read /Users/I742619/.kube/config: is a directory[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mUnable to assert active namespace. Using default[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mWatcher failed for contexts -- error loading config file "/Users/I742619/.kube/config": read /Users/I742619/.kube/config: is a directory[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mrestConfig load failed[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m12:24PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:24PM[0m [31mERR[0m [1mnuking k9s shell pod[0m [36merror=[0m[31m[1m"error loading config file \"/Users/I742619/.kube/config\": read /Users/I742619/.kube/config: is a directory"[0m[0m
+[90m12:24PM[0m [33mWRN[0m [1mSave failed. no active config detected[0m
+[90m12:24PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:24PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:26PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m12:26PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m12:34PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:34PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:35PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m12:35PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:49PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:49PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:49PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:49PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m1:05PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": dial tcp: lookup api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com: no such host"[0m[0m
+[90m1:05PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m1:10PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m1:10PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m1:10PM[0m [33mWRN[0m [1mnamespace validation failed for: "default"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m1:10PM[0m [33mWRN[0m [1mnamespace validation failed for: "default"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m1:26PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m1:26PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m1:32PM[0m [31mERR[0m [1mno port-forward defined[0m
+[90m1:32PM[0m [31mERR[0m [1mpods "orca-fpa-core-2024-22-0-9eda02d09ff3-staging-devspace-6856gcnjm" not found[0m
+[90m1:34PM[0m [31mERR[0m [1mdeployments.apps "orca-fpa-core-2024-22-0-7a025150214e-staging" not found[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (install-oneagent)"[0m[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (install-oneagent)"[0m[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:35PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-759c74cb4f-dh977 (install-oneagent)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [31mERR[0m [1mlogs-stream[0m [36merror=[0m[31m[1m"stream logs failed container \"orca-fpa-core-2024-22-0-7a025150214e-staging\" in pod \"orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf\" is waiting to start: PodInitializing for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:38PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (install-oneagent)"[0m[0m
+[90m1:38PM[0m [33mWRN[0m [1mlog-reader canceled[0m [36merror=[0m[31m[1m"Stream canceled context canceled for apps/orca-fpa-core-2024-22-0-7a025150214e-staging-devspace-84d92ncpf (orca-fpa-core-2024-22-0-7a025150214e-staging)"[0m[0m
+[90m1:42PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m1:42PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m1:46PM[0m [31mERR[0m [1mdeployments.apps "orca-fpa-core-2024-22-0-88ad9fa6e13d-staging-devspace" not found[0m
+[90m2:07PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:07PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m2:50PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:50PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:24AM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:24AM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m10:02AM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m10:02AM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m11:39AM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m11:39AM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m11:40AM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:58PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:58PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m3:29PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m3:29PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m4:12PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m4:12PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m4:12PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m4:12PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m4:29PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m4:29PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m4:29PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m4:38PM[0m [33mWRN[0m [1mDeleted (0) portforward for "apps/orca-fpa-core-2024-22-0-d7b49eeb08da-staging-devspace-66d7z482p"[0m
+[90m5:03PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m5:03PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m5:15PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m5:15PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m5:15PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": read tcp 10.7.233.191:52966->52.19.33.179:443: read: can't assign requested address"[0m[0m
+[90m5:15PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m5:30PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": dial tcp: lookup api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com: no such host"[0m[0m
+[90m5:30PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m5:48PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": dial tcp: lookup api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com: no such host"[0m[0m
+[90m5:48PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m5:48PM[0m [33mWRN[0m [1mnamespace validation failed for: "apps"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m5:48PM[0m [33mWRN[0m [1mnamespace validation failed for: "apps"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m11:30AM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m11:30AM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m2:01PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m2:01PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m2:05PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m2:05PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m2:29PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:29PM[0m [31mERR[0m [1mFail to locate metrics-server[0m [36merror=[0m[31m[1m"the server has asked for the client to provide credentials"[0m[0m
+[90m2:29PM[0m [33mWRN[0m [1mnamespace validation failed for: "dev"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"the server has asked for the client to provide credentials"[0m[0m
+[90m2:29PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m2:29PM[0m [33mWRN[0m [1mnamespace validation failed for: "dev"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mFail to load global/context configuration[0m [36merror=[0m[31m[1m"the server has asked for the client to provide credentials\ncannot connect to context: cluster-admin-green\nk8s connection failed for context: cluster-admin-green"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m2:29PM[0m [31mERR[0m [1mfailed to list contexts[0m [36merror=[0m[31m[1m"no connection"[0m[0m
+[90m2:29PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"the server has asked for the client to provide credentials"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mLoad cluster resources - No API server connection[0m
+[90m2:29PM[0m [33mWRN[0m [1mUnable to dial discovery API[0m [36merror=[0m[31m[1m"no connection to dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mContext switch failed[0m [36merror=[0m[31m[1m"no connection to cached dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mno connection to cached dial[0m
+[90m2:29PM[0m [31mERR[0m [1mContext switch failed[0m [36merror=[0m[31m[1m"no connection to cached dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mno connection to cached dial[0m
+[90m2:29PM[0m [31mERR[0m [1mContext switch failed[0m [36merror=[0m[31m[1m"no connection to cached dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mno connection to cached dial[0m
+[90m2:29PM[0m [31mERR[0m [1mContext switch failed[0m [36merror=[0m[31m[1m"no connection to cached dial"[0m[0m
+[90m2:29PM[0m [31mERR[0m [1mno connection to cached dial[0m
+[90m2:29PM[0m [31mERR[0m [1mfailed to list namespaces[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m2:29PM[0m [33mWRN[0m [1mnamespace validation failed for: "dev"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m2:29PM[0m [33mWRN[0m [1mnamespace validation failed for: "dev"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m2:33PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m2:33PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m4:03PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m4:03PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m4:03PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m4:03PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m4:04PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m4:04PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m4:04PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://api.dmi.orca-dev-dmi-hc-dev.dev-aws.hanacloud.ondemand.com/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m4:04PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m

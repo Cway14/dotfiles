@@ -1,0 +1,15 @@
+k9s:
+  cluster: garden
+  namespace:
+    active: dev
+    lockFavorites: false
+    favorites:
+    - apps
+    - dev
+    - all
+    - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost
