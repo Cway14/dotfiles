@@ -8,5 +8,5 @@ alias l=lazygit
 
 alias so="source ~/.zshrc"
 
-alias dots='~/.dotfiles'
-alias config='$XDG_CONFIG_HOME'
+alias dots="cd $ZSH"
+alias config="cd $XDG_CONFIG_HOME"
