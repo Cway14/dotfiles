@@ -1,0 +1,3 @@
+#!/bin/sh
+# ff - fuzzy find files and open them in vscode
+fzf | xargs code
