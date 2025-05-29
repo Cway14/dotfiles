@@ -135,6 +135,9 @@ install_dotfiles () {
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
+
+  # find the linkers and run them iteratively
+  find . -name link.sh | while read linker ; do sh -c "${linker}" ; done
 }
 
 setup_gitconfig
