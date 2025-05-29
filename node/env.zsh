@@ -1,3 +1,4 @@
+export NODE_VERSION=18.20.1
 export NODE_COMPILE_CACHE=.cache/nodejs-compile-cache
 
 export NVM_DIR="$HOME/.nvm"
