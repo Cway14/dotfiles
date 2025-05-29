@@ -5,6 +5,7 @@ alias g=git
 alias d=docker
 alias e=exit
 alias l=lazygit
+alias c=clear
 
 alias so="source ~/.zshrc"
 

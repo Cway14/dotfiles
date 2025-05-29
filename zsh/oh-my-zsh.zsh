@@ -11,3 +11,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Reset the ZSH variable to point to the dotfiles directory
 export ZSH=$HOME/.dotfiles
+# Re-source aliases to override oh-my-zsh aliases
+source $ZSH/zsh/aliases.zsh
