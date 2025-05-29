@@ -1,5 +1,6 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
+export ZSH_SAP=$HOME/.dotfiles.sap
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
@@ -14,7 +15,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($ZSH/**/*.zsh $ZSH_SAP/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
