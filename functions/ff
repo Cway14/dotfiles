@@ -1,0 +1,5 @@
+# Usage: ff
+# Description: Fuzzy find files and open them in Visual Studio Code
+ff() {
+    fzf | xargs code
+}

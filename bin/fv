@@ -1,3 +1,0 @@
-#!/bin/sh
-# fv - fuzzy find files and open them in nvim
-fzf | xargs nvim

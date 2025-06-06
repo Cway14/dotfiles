@@ -1,0 +1,5 @@
+# Usage: fv
+# Description: Open a file using nvim
+fv () {
+    fzf | xargs nvim
+}
