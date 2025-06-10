@@ -59,5 +59,13 @@
     {
         "key": "cmd+,",
         "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-lazygit-vscode.toggle"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "lazygit-vscode-cw.toggle"
     }
 ]

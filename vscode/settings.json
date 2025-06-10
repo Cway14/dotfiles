@@ -383,7 +383,7 @@
                 "g"
             ],
             "commands": [
-                "lazygit-vscode.toggle"
+                "lazygit-vscode-cw.toggle"
             ]
         },
         {
@@ -415,7 +415,7 @@
                 "g"
             ],
             "commands": [
-                "lazygit-vscode.toggle"
+                "lazygit-vscode-cw.toggle"
             ]
         },
         {
@@ -685,7 +685,6 @@
     "[less]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "markiscodecoverage.searchCriteria": "build-reports/lcov*.info",
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "files.trimTrailingWhitespace": true,
@@ -708,7 +707,13 @@
     "files.associations": {
         "*.snapshot": "jest-snapshot" // requires vscode-jest extension
     },
-    "lazygit-vscode.lazygitPath": "/opt/homebrew/bin/lazygit",
+    "lazygit-vscode-cw.lazygitPath": "/opt/homebrew/bin/lazygit",
+    "lazygit-vscode-cw.panels": {
+        "sidebar": "hide",
+        "panel": "hide",
+        "secondarySidebar": "hide"
+    },
+    "lazygit-vscode-cw.autoMaximizeWindow": true
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false
     },
@@ -729,5 +734,11 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "chat.commandCenter.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.commandCenter": false,
+
 }

@@ -29,6 +29,8 @@
 [core]
         excludesfile = ~/.gitignore
         pager = delta
+	untrackedCache = true
+	fsmonitor = true
 [apply]
         whitespace = nowarn
 [mergetool]
