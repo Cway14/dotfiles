@@ -1,3 +1,4 @@
+zmodload zsh/zprof
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 export ZSH_SAP=$HOME/.dotfiles.sap
@@ -59,3 +60,24 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# Conditional zprof output - only show top 3 if startup > 1 second
+export ZPROF_ENABLED=true
+if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
+    local ZPROF_THRESHOLD=500
+    # Get the total time from zprof output
+    zprof_output=$(zprof)
+    total_time=$(echo "$zprof_output" | awk '
+        /^[[:space:]]*[0-9]+\)/ {
+            total += $3
+        }
+        END {
+            print int(total)
+        }')
+
+    # Check if startup time > threshold
+    if (( total_time > $ZPROF_THRESHOLD )); then
+        echo "\n🐌 Slow terminal startup detected (${total_time}ms > ${ZPROF_THRESHOLD}ms)"
+        echo "$zprof_output" | head -5 | tail -4
+    fi
+fi

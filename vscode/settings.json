@@ -715,7 +715,8 @@
     "gitlens.home.preview.enabled": false,
     "editor.accessibilitySupport": "off",
     "files.associations": {
-        "*.snapshot": "jest-snapshot" // requires vscode-jest extension
+        "*.snapshot": "jest-snapshot",
+        "*.symlink": "shellscript"
     },
     "lazygit-vscode-cw.lazygitPath": "~/bin/lazygit",
     "lazygit-vscode-cw.panels": {
