@@ -1,1 +1,1 @@
-ln -sfF $ZSH/k9s $XDG_CONFIG_HOME
+ln -sfF $ZSH/k9s $XDG_CONFIG_HOME/k9s

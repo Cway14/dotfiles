@@ -22,4 +22,4 @@ for file in $( find -H "$DOTFILES" -maxdepth 3 -name '*.symlink' ) ; do
 done
 
 # find the linkers and run them iteratively
-find . -name link.sh | while read linker ; do sh -c "${linker}" ; done
+find . -name link.sh | while read linker ; do echo "Running linker ${linker}"; sh -c "${linker}" ; done

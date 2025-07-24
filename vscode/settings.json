@@ -3,9 +3,21 @@
         "typescript",
         "typescriptreact"
     ],
-    "eslint.options": {
-        // "configFile": "~\\SAPDevelop\\orca_cloud\\.eslintrc.json", // should not be used
-        "resolvePluginsRelativeTo": "~\\SAPDevelop\\orca_cloud\\config\\coding\\eslint\\node_modules"
+    "eslint.execArgv": [
+        "--max-old-space-size=8000"
+    ],
+    "eslint.debug": true,
+    "eslint.runtime": "node",
+    "files.exclude": {
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.map": {
+            "when": "$(basename).map"
+        },
+        "hooks": true,
+        "platforms": true,
+        "node_modules": true
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -13,7 +25,6 @@
         "**/node_modules/*/**": true,
         "**/.hg/store/**": true
     },
-    "eslint.nodePath": "~\\SAPDevelop\\orca_cloud\\config\\coding\\eslint\\node_modules",
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit"
     },
@@ -36,7 +47,6 @@
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "jasmine-tests.url.Port": 8080,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "vim.handleKeys": {
@@ -339,6 +349,24 @@
         {
             "before": [
                 "<leader>",
+                "e"
+            ],
+            "commands": [
+                "vscode-harpoon.editEditors"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoPreviousHarpoonEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "s",
                 "l"
             ],
@@ -467,7 +495,7 @@
         {
             "before": [
                 "<leader>",
-                "e",
+                "E",
             ],
             "commands": [
                 {
@@ -483,18 +511,6 @@
             "commands": [
                 {
                     "command": "workbench.action.findInFiles",
-                },
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "f"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen",
                 },
             ]
         },
@@ -681,11 +697,6 @@
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     "workbench.editor.editorActionsLocation": "titleBar",
     "terminal.integrated.scrollback": 1000000,
-
-    "[less]": {
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-    "markiscodecoverage.searchCriteria": "build-reports/lcov*.info",
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
@@ -697,23 +708,22 @@
     },
     "editor.linkedEditing": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "window.menuBarVisibility": "compact",
     "workbench.layoutControl.enabled": false,
     "vim.smartRelativeLine": false,
     "window.newWindowProfile": "Default",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "One Dark Pro Night Flat",
     "gitlens.home.preview.enabled": false,
     "editor.accessibilitySupport": "off",
     "files.associations": {
         "*.snapshot": "jest-snapshot" // requires vscode-jest extension
     },
-    "lazygit-vscode-cw.lazygitPath": "/opt/homebrew/bin/lazygit",
+    "lazygit-vscode-cw.lazygitPath": "~/bin/lazygit",
     "lazygit-vscode-cw.panels": {
         "sidebar": "hide",
         "panel": "hide",
         "secondarySidebar": "hide"
     },
-    "lazygit-vscode-cw.autoMaximizeWindow": true
+    "lazygit-vscode-cw.autoMaximizeWindow": true,
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false
     },
@@ -724,21 +734,17 @@
     "github.copilot.chat.languageContext.typescript.enabled": true,
     "github.copilot.chat.languageContext.inline.typescript.enabled": true,
     "github.copilot.chat.languageContext.fix.typescript.enabled": true,
-    "sonarlint.connectedMode.connections.sonarqube": [
-        {
-            "serverUrl": "https://sonar.tools.sap",
-            "connectionId": "https-sonar-tools-sap-"
-        }
-    ],
-    "sonarlint.focusOnNewCode": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "terminal.integrated.defaultProfile.osx": "zsh",
     "chat.commandCenter.enabled": false,
-    "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
     "workbench.startupEditor": "newUntitledFile",
     "window.commandCenter": false,
-
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDragAndDrop": false,
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "typescript.tsserver.maxTsServerMemory": 8192 // TODO: use #typescript.tsserver.nodePath# to run TS Server with a custom Node installation.
 }
