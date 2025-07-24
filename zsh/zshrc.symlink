@@ -80,7 +80,5 @@ if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
     if (( total_time > $ZPROF_THRESHOLD )); then
         echo "🐌 Slow terminal startup detected (${total_time}ms > ${ZPROF_THRESHOLD}ms)"
         echo "$zprof_output" | head -5 | tail -4
-    else
-        echo "🚀 Terminal startup is fast (${total_time}ms <= ${ZPROF_THRESHOLD}ms)"
     fi
 fi

@@ -1,10 +1,11 @@
 # Prompt format
 format = """
-[╭─](#background_color)$username$hostname $directory $git_branch $git_status
+[╭─](#background_color)$username$hostname $directory $git_branch $python
 [╰─](fg:#background_color)$character
 """
 
 palette = 'bira'
+command_timeout = 1000
 
 # Username module
 [username]
@@ -23,19 +24,12 @@ format = '[@$hostname]($style)'
 [directory]
 style = "bold blue"
 format = "[$path]($style)"
-truncation_length = 6
-truncation_symbol = "…/"
-
-# Git status module
-[git_status]
-style = "bold red"
-format = '[$modified]($style)'
 
 # Git branch module
 [git_branch]
 symbol = ""
 style = "bold yellow"
-format = '[$symbol ‹$branch›]($style)'
+format = '[$symbol‹$branch›]($style)'
 
 # Character module (prompt symbol)
 [character]
