@@ -1,0 +1,1 @@
+ln -sfF $ZSH/zsh/starship.toml $XDG_CONFIG_HOME/starship.toml

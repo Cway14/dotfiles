@@ -1,0 +1,53 @@
+# Prompt format
+format = """
+[╭─](#background_color)$username$hostname $directory $git_branch $git_status
+[╰─](fg:#background_color)$character
+"""
+
+palette = 'bira'
+
+# Username module
+[username]
+show_always = true
+style_user = "bold green"
+style_root = "bg:#background_color fg:#error_color"
+format = '[$user]($style)'
+
+# Hostname module
+[hostname]
+ssh_only = false
+style = "bold green"
+format = '[@$hostname]($style)'
+
+# Directory module
+[directory]
+style = "bold blue"
+format = "[$path]($style)"
+truncation_length = 6
+truncation_symbol = "…/"
+
+# Git status module
+[git_status]
+style = "bold red"
+format = '[$modified]($style)'
+
+# Git branch module
+[git_branch]
+symbol = ""
+style = "bold yellow"
+format = '[$symbol ‹$branch›]($style)'
+
+# Character module (prompt symbol)
+[character]
+success_symbol = '[\$](bold white)'
+error_symbol = '[\$](bold red)'
+
+# Color variables (customize these)
+[palettes.bira]
+background_color = "#1e1e2e"
+text_color = "#cdd6f4"
+directory_color = "#89b4fa"
+git_color = "#a6e3a1"
+git_status_color = "#f38ba8"
+error_color = "#f38ba8"
+user_color="#000000"
