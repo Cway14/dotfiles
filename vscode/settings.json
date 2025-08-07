@@ -110,13 +110,13 @@
         "*.snapshot": "jest-snapshot",
         "*.symlink": "shellscript"
     },
-    "lazygit-vscode-cw.lazygitPath": "~/bin/lazygit",
-    "lazygit-vscode-cw.panels": {
+    "lazygit-vscode.lazygitPath": "~/bin/lazygit",
+    "lazygit-vscode.panels": {
         "sidebar": "hide",
         "panel": "hide",
         "secondarySidebar": "hide"
     },
-    "lazygit-vscode-cw.autoMaximizeWindow": true,
+    "lazygit-vscode.autoMaximizeWindow": true,
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false
     },
