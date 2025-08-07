@@ -1,1 +1,0 @@
-ln -sfF $ZSH/nvim $XDG_CONFIG_HOME/nvim
