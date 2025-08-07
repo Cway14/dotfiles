@@ -67,5 +67,13 @@
     {
         "key": "shift+cmd+l",
         "command": "lazygit-vscode-cw.toggle"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]
