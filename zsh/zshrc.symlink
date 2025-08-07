@@ -65,10 +65,10 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # Conditional zprof output - only show top 3 if startup > 1 second
 export ZPROF_ENABLED=true
 if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
-    local ZPROF_THRESHOLD=100
+    local ZPROF_THRESHOLD=500
     # Get the total time from zprof output
     zprof_output=$(zprof)
-    total_time=$(echo "$zprof_output" | awk '
+    STARTUP_TIME=$(echo "$zprof_output" | awk '
         /^[[:space:]]*[0-9]+\)/ {
             total += $3
         }
@@ -77,8 +77,10 @@ if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
         }')
 
     # Check if startup time > threshold
-    if (( total_time > $ZPROF_THRESHOLD )); then
+    if (( STARTUP_TIME > $ZPROF_THRESHOLD )); then
         echo "🐌 Slow terminal startup detected (${total_time}ms > ${ZPROF_THRESHOLD}ms)"
         echo "$zprof_output" | head -5 | tail -4
+    else 
+      unset zprof_output
     fi
 fi

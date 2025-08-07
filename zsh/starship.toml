@@ -1,11 +1,12 @@
 # Prompt format
 format = """
-[╭─](#background_color)$username$hostname $directory $git_branch $python
+[╭─](#background_color)$username$hostname $directory $git_branch
 [╰─](fg:#background_color)$character
 """
 
 palette = 'bira'
 command_timeout = 1000
+add_newline = false
 
 # Username module
 [username]
