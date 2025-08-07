@@ -2,4 +2,4 @@ git/gitconfig.local.symlink
 Brewfile.lock.json
 k9s/clusters/**
 **.log
-
+karabiner/automatic_backups/**
