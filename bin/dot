@@ -60,3 +60,6 @@ brew upgrade
 # Install software
 echo "› script/install"
 $ZSH/script/install
+
+echo "› brew bundle dump"
+brew bundle dump --force --file="$ZSH/Brewfile"
