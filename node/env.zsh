@@ -4,14 +4,5 @@ export NODE_OPTIONS=--max_old_space_size=15360
 export TSC_WATCHFILE=UseDynamicPriorityPolling
 
 export NVM_DIR="$HOME/.nvm"
-
-load-nvm() {
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-}
-
-nvm() {
-  unset -f nvm
-  load-nvm
-  nvm "$@"
-}
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
