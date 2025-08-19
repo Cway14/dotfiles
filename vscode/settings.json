@@ -100,7 +100,6 @@
     },
     "editor.linkedEditing": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.layoutControl.enabled": false,
     "vim.smartRelativeLine": false,
     "window.newWindowProfile": "Default",
     "workbench.colorTheme": "One Dark Pro Night Flat",
@@ -134,7 +133,6 @@
     "chat.commandCenter.enabled": false,
     "workbench.activityBar.location": "top",
     "workbench.startupEditor": "newUntitledFile",
-    "window.commandCenter": false,
     "workbench.sideBar.location": "right",
     "explorer.confirmDragAndDrop": false,
     "eslint.format.enable": true,
@@ -149,5 +147,8 @@
     },
     "[java]": {
         "editor.defaultFormatter": "redhat.java"
-    }
+    },
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false
 }
