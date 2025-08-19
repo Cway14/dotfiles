@@ -57,9 +57,10 @@ brew update
 echo "› brew upgrade"
 brew upgrade
 
+echo "› brew bundle dump"
+brew bundle dump --force --file="$ZSH/Brewfile"
+
 # Install software
 echo "› script/install"
 $ZSH/script/install
 
-echo "› brew bundle dump"
-brew bundle dump --force --file="$ZSH/Brewfile"
