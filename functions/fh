@@ -1,7 +1,7 @@
 
+# Usage: fh
+# Description: fuzzy history search
 fh () {
-    # Usage: fh
-    # Description: fuzzy history search
     if ! command -v fzf &> /dev/null; then
         echo "fzf is not installed. Please install it to use this function."
     else

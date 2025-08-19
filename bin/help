@@ -1,0 +1,195 @@
+#!/bin/sh
+#
+# help
+#
+# Provides help documentation for all custom functions and bin scripts
+#
+# Usage: help [command]
+#        help -l, --list    List all available commands
+#        help -h, --help    Show this help message
+#
+# Examples:
+#   help               # Show this help and list all commands
+#   help fh            # Show help for the 'fh' function
+#   help git-wtf       # Show help for the 'git-wtf' script
+#   help --list        # List all available commands
+
+DOTFILES_ROOT="${ZSH:-$HOME/.dotfiles}"
+FUNCTIONS_DIR="$DOTFILES_ROOT/functions"
+BIN_DIR="$DOTFILES_ROOT/bin"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+BOLD='\033[1m'
+NC='\033[0m' # No Color
+
+print_usage() {
+    echo "${BOLD}help${NC} - Documentation for custom functions and bin scripts"
+    echo
+    echo "${BOLD}Usage:${NC}"
+    echo "  help [command]         Show help for a specific command"
+    echo "  help -l, --list        List all available commands"
+    echo "  help -h, --help        Show this help message"
+    echo
+    echo "${BOLD}Examples:${NC}"
+    echo "  help fh                Show help for the 'fh' function"
+    echo "  help git-wtf           Show help for the 'git-wtf' script"
+    echo "  help --list            List all available commands"
+}
+
+list_commands() {
+    echo "${BOLD}Available Functions:${NC}"
+    if [ -d "$FUNCTIONS_DIR" ]; then
+        for file in "$FUNCTIONS_DIR"/*; do
+            if [ -f "$file" ] && [ ! "$(basename "$file")" = "_*" ]; then
+                name=$(basename "$file")
+                # Skip completion files (start with _)
+                if [ "${name#_}" = "$name" ]; then
+                    description=$(extract_description "$file")
+                    printf "  ${GREEN}%-15s${NC} %s\n" "$name" "$description"
+                fi
+            fi
+        done
+    fi
+
+    echo
+    echo "${BOLD}Available Bin Scripts:${NC}"
+    if [ -d "$BIN_DIR" ]; then
+        for file in "$BIN_DIR"/*; do
+            if [ -f "$file" ] && [ -x "$file" ]; then
+                name=$(basename "$file")
+                # Skip this help script from the listing
+                if [ "$name" != "help" ]; then
+                    description=$(extract_description "$file")
+                    printf "  ${BLUE}%-15s${NC} %s\n" "$name" "$description"
+                fi
+            fi
+        done
+    fi
+}
+
+extract_description() {
+    file="$1"
+    if [ ! -f "$file" ]; then
+        return
+    fi
+
+    # Look for various description patterns in the first 20 lines
+    description=""
+    
+    # Try to find a description line
+    description=$(head -20 "$file" | grep -E "^#.*[Dd]escription:" | head -1 | sed 's/^#.*[Dd]escription:[[:space:]]*//')
+    
+    # If no description found, try usage line
+    if [ -z "$description" ]; then
+        description=$(head -20 "$file" | grep -E "^#.*[Uu]sage:" | head -1 | sed 's/^#.*[Uu]sage:[[:space:]]*//')
+    fi
+    
+    # If still no description, look for the first meaningful comment
+    if [ -z "$description" ]; then
+        description=$(head -20 "$file" | grep -E "^#[^!]" | grep -v "^#!/" | grep -v "^#$" | head -1 | sed 's/^#[[:space:]]*//')
+    fi
+    
+    # Truncate if too long
+    if [ ${#description} -gt 60 ]; then
+        description=$(echo "$description" | cut -c1-57)...
+    fi
+    
+    echo "$description"
+}
+
+show_help_for_command() {
+    command="$1"
+    found=0
+    
+    # Check functions directory
+    if [ -f "$FUNCTIONS_DIR/$command" ]; then
+        echo "${BOLD}Function: ${GREEN}$command${NC}"
+        echo "${BOLD}Location:${NC} $FUNCTIONS_DIR/$command"
+        echo
+        extract_full_help "$FUNCTIONS_DIR/$command"
+        found=1
+    fi
+    
+    # Check bin directory
+    if [ -f "$BIN_DIR/$command" ]; then
+        echo "${BOLD}Script: ${BLUE}$command${NC}"
+        echo "${BOLD}Location:${NC} $BIN_DIR/$command"
+        echo
+        extract_full_help "$BIN_DIR/$command"
+        found=1
+    fi
+    
+    if [ $found -eq 0 ]; then
+        echo "${RED}Error:${NC} Command '$command' not found."
+        echo "Use 'help --list' to see available commands."
+        exit 1
+    fi
+}
+
+extract_full_help() {
+    file="$1"
+    
+    # Extract all comment lines from the beginning of the file
+    help_text=""
+    in_header=1
+    line_num=0
+    
+    while IFS= read -r line; do
+        line_num=$((line_num + 1))
+        
+        # Skip shebang
+        if [ $line_num -eq 1 ] && echo "$line" | grep -q "^#!"; then
+            continue
+        fi
+        
+        # If it's a comment line, add it to help text
+        if echo "$line" | grep -q "^#"; then
+            # Remove the # and leading space
+            clean_line=$(echo "$line" | sed 's/^#[[:space:]]*//')
+            if [ -n "$clean_line" ]; then
+                help_text="$help_text$clean_line\n"
+            else
+                help_text="$help_text\n"
+            fi
+        # If it's an empty line, continue
+        elif [ -z "$(echo "$line" | tr -d '[:space:]')" ]; then
+            continue
+        # If we hit non-comment, non-empty line, we're done with header
+        else
+            break
+        fi
+        
+        # Stop after reasonable number of lines to avoid huge outputs
+        if [ $line_num -gt 50 ]; then
+            break
+        fi
+    done < "$file"
+    
+    if [ -n "$help_text" ]; then
+        printf "$help_text"
+    else
+        echo "No documentation found in file header."
+        echo
+        echo "${BOLD}File contents preview:${NC}"
+        head -10 "$file"
+    fi
+}
+
+# Main script logic
+case "$1" in
+    ""|"-h"|"--help")
+        print_usage
+        echo
+        list_commands
+        ;;
+    "-l"|"--list")
+        list_commands
+        ;;
+    *)
+        show_help_for_command "$1"
+        ;;
+esac
