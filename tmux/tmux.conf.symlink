@@ -1,0 +1,12 @@
+# Set prefix to Ctrl-a (caps lock mapped to ctrl)
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+
+# More intuitive pane splitting
+bind - split-window -v    # horizontal split (creates pane below)
+bind \\ split-window -h   # vertical split (creates pane to the right)
+
+# Rebind keys to bypass confirmation prompts
+bind-key & kill-window
+bind-key x kill-pane
