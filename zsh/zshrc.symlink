@@ -36,9 +36,24 @@ do
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
-# Smarter completion initialization
+# Smarter completion initialization with cross-platform stat command
 autoload -Uz compinit
-if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+_zcompdump_needs_rebuild() {
+  if [[ ! -f ~/.zcompdump ]]; then
+    return 0
+  fi
+  if [[ "$(uname -s)" == "Darwin" ]]; then
+    # macOS: use -f for format, %Sm for modification time
+    [[ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]]
+  else
+    # Linux: use -c for format, %y for modification time
+    local dump_date=$(stat -c '%y' ~/.zcompdump 2>/dev/null | cut -d' ' -f1)
+    local today=$(date +'%Y-%m-%d')
+    [[ "$today" != "$dump_date" ]]
+  fi
+}
+
+if _zcompdump_needs_rebuild; then
     echo "Rebuilding completion cache..."
     compinit
 else
@@ -80,7 +95,7 @@ if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
     if (( STARTUP_TIME > $ZPROF_THRESHOLD )); then
         echo "🐌 Slow terminal startup detected (${STARTUP_TIME}ms > ${ZPROF_THRESHOLD}ms)"
         echo "$zprof_output" | head -5 | tail -4
-    else 
+    else
       unset zprof_output
     fi
 fi

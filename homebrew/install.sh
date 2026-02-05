@@ -10,15 +10,25 @@ if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
 
-  # Install the correct homebrew for each OS type
+  # Modern unified Homebrew installer works for both macOS and Linux
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  # After install, set up the path for the current session
   if test "$(uname)" = "Darwin"
   then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
+    if [[ -d "/opt/homebrew" ]]; then
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+    elif [[ -d "/usr/local/Homebrew" ]]; then
+      eval "$(/usr/local/bin/brew shellenv)"
+    fi
+  elif test "$(uname)" = "Linux"
   then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+    if [[ -d "/home/linuxbrew/.linuxbrew" ]]; then
+      eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    elif [[ -d "$HOME/.linuxbrew" ]]; then
+      eval "$("$HOME/.linuxbrew/bin/brew" shellenv)"
+    fi
   fi
-
 fi
 
 exit 0

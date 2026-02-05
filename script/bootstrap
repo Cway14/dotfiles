@@ -27,6 +27,17 @@ fail () {
   exit
 }
 
+# Check if a topic is macOS-only
+is_macos_only_topic () {
+  local topic_dir=$1
+  [[ -f "$topic_dir/.macos-only" ]]
+}
+
+# Check if we're on macOS
+is_macos () {
+  [[ "$(uname -s)" == "Darwin" ]]
+}
+
 setup_gitconfig () {
   if ! [ -f git/gitconfig.local.symlink ]
   then
@@ -132,27 +143,41 @@ install_dotfiles () {
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
   do
+    # Get the topic directory for this symlink
+    local topic_dir=$(dirname "$src")
+
+    # Skip macOS-only topics on Linux
+    if is_macos_only_topic "$topic_dir" && ! is_macos; then
+      info "skipping macOS-only: $(basename "$topic_dir")/$(basename "$src")"
+      continue
+    fi
+
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
 
   # find the linkers and run them iteratively
-  find . -name link.sh | while read linker ; do sh -c "${linker}" ; done
+  # Skip linkers in macOS-only topics on Linux
+  find . -name link.sh | while read linker ; do
+    local topic_dir=$(dirname "$linker")
+    if is_macos_only_topic "$topic_dir" && ! is_macos; then
+      info "skipping macOS-only linker: $linker"
+      continue
+    fi
+    sh -c "${linker}"
+  done
 }
 
 setup_gitconfig
 install_dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
+# Install dependencies (works on both macOS and Linux with Homebrew/Linuxbrew)
+info "installing dependencies"
+if source bin/dot | while read -r data; do info "$data"; done
 then
-  info "installing dependencies"
-  if source bin/dot | while read -r data; do info "$data"; done
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
+  success "dependencies installed"
+else
+  fail "error installing dependencies"
 fi
 
 echo ''

@@ -4,4 +4,11 @@
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 echo $branch
-echo $branch | tr -d '\n' | tr -d ' ' | pbcopy
+
+if test "$(uname)" = "Darwin"
+then
+  echo $branch | tr -d '\n' | tr -d ' ' | pbcopy
+elif test "$(uname)" = "Linux"
+then
+  echo $branch | tr -d '\n' | tr -d ' ' | xclip -selection clipboard
+fi
