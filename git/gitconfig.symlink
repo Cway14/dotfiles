@@ -60,10 +60,17 @@
     navigate = true  # use n and N to move between diff sections
     dark = true      # or light = true, or omit for auto-detection
     line-numbers = true
-    side-by-side = true
+#     side-by-side = true
     hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
 
 [merge]
     conflictstyle = zdiff3
 [rebase]
 	autoStash = true
+[rerere]
+	enabled = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

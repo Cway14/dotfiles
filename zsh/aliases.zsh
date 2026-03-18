@@ -5,7 +5,9 @@ alias g=git
 alias d=docker
 alias e=exit
 alias l=lazygit
-alias c=clear
+alias c=claude
+alias t=todo
+alias cd=z
 
 alias so="source ~/.zshrc"
 
@@ -36,8 +38,6 @@ alias 6='cd -6'
 alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
-
-alias t='tail -f'
 
 # Command line head / tail shortcuts
 alias -g H='| head'

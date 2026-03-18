@@ -7,6 +7,9 @@
 
 set -e
 
+# Set up PATH for cron jobs - TODO: Find a better way to handle this
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
 parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
 dotfilesDirectory="$(cd "$( dirname "$parentDirectory" )" && pwd -P)"
 

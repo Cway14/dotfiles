@@ -99,3 +99,12 @@ if [[ -n "$ZPROF_ENABLED" ]] || [[ "$1" == "--profile" ]]; then
       unset zprof_output
     fi
 fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.4.1 # run chruby to see actual version
+# Increase file descriptor limit for development
+ulimit -n 65536 2>/dev/null || ulimit -n 10240 2>/dev/null

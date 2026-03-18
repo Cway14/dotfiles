@@ -4,9 +4,18 @@ set -g prefix C-a
 bind C-a send-prefix
 
 # More intuitive pane splitting
-bind - split-window -v    # horizontal split (creates pane below)
-bind \\ split-window -h   # vertical split (creates pane to the right)
+bind - split-window -v -c "#{pane_current_path}"    # horizontal split (creates pane below)
+bind \\ split-window -h -c "#{pane_current_path}"   # vertical split (creates pane to the right)
+bind c new-window -c "#{pane_current_path}" # open new window in working directory
 
 # Rebind keys to bypass confirmation prompts
 bind-key & kill-window
 bind-key x kill-pane
+
+# UI Customization
+set -g status-style "bg=default,fg=green"
+
+setw -g mouse on
+
+set-option -g automatic-rename on
+set-option -g automatic-rename-format '#{b:pane_current_path}'

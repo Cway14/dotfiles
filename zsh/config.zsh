@@ -3,7 +3,16 @@ export CLICOLOR=true
 
 fpath=($ZSH/functions $fpath)
 
-autoload -U $ZSH/functions/*(:t)
+# Autoload all functions in the functions directory
+if [[ -d $ZSH/functions ]]; then
+  for func in $ZSH/functions/*; do
+    if [[ -f $func ]]; then
+      # Skip completion functions (starting with _) - they'll be handled by compinit
+      [[ ${func:t} == _* ]] && continue
+      autoload -U ${func:t}
+    fi
+  done
+fi
 autoload -U colors && colors
 
 HISTFILE=~/.zsh_history

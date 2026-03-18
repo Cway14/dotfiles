@@ -1,0 +1,11 @@
+# Cron jobs for dotfiles
+# Format: minute hour day-of-month month day-of-week command
+#
+# Examples:
+# 0 2 * * * /usr/bin/some-command  # Run daily at 2:00 AM
+# */15 * * * * /usr/bin/another-command  # Run every 15 minutes
+# 0 9 * * 1 /usr/bin/weekly-command  # Run every Monday at 9:00 AM
+
+# Run dotfiles update every minute (for debugging) with proper logging
+* 11 * * * cd /Users/I742619/.dotfiles && /bin/sh bin/dot > logs/dot-update.log 2>&1
+15 23 * * * cd /Users/I742619/SAPDevelop/uqm && npm install >> /Users/I742619/.dotfiles/logs/npm-install.log 2>&1 # Run daily at 11:15 PM to install npm packages
