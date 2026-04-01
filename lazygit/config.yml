@@ -1,25 +1,8 @@
 customCommands:
   - key: "<c-p>"
     context: "localBranches, remoteBranches, files"
-    prompts:
-      - type: "menu"
-        title: "Which workstream do you want to push to?"
-        key: "branch"
-        options:
-          - name: "master"
-            value: "master"
-          - name: "workstream_lumira"
-            value: "workstream_lumira"
-          - name: "vertical/uqm"
-            value: "vertical/uqm"
-          - name: "workstream_infrastructure"
-            value: "workstream_infrastructure"
-          - name: "workstream_assistance"
-            value: "workstream_assistance"
-          - name: "workstream_app_building"
-            value: "workstream_app_building"
-    command: "git push origin HEAD:refs/for/{{.Form.branch}}"
-    loadingText: "Pushing to workstream"
+    command: "git push origin HEAD:refs/for/master"
+    loadingText: "Pushing to master..."
 os:
   editPreset: "vscode"
 git:
