@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Force-quit apps that block the nightly pmset shutdown by prompting
+# to save unsaved work. Runs a couple of minutes before shutdown.
+#
+# Uses SIGTERM (not -9): apps exit cleanly without showing the save
+# dialog because no user is interacting. Add more apps as needed.
+
+pkill Bruno
+pkill Preview
+pkill dbeaver
+
+exit 0

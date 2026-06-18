@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.preshutdown</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/I742619/.dotfiles/launchd/bin/pre-shutdown-cleanup</string>
+    </array>
+    <!-- Run at 02:58, two minutes before the 03:00 pmset shutdown. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>58</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/I742619/.dotfiles/logs/preshutdown.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/I742619/.dotfiles/logs/preshutdown.err</string>
+</dict>
+</plist>
