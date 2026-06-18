@@ -8,6 +8,7 @@ alias l=lazygit
 alias c=claude
 alias t=todo
 alias cd=z
+alias ghd="gh dash"
 
 alias so="source ~/.zshrc"
 

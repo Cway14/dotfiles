@@ -173,6 +173,16 @@ if.window-title-regex-substring = 'Untitled'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+if.window-title-regex-substring = 'Untitled'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.google.chrome.for.testing'
+if.window-title-regex-substring = 'Untitled'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.microsoft.edgemac'
 if.window-title-regex-substring = '^(?!.*DevTools|.*Untitled).*'
 run = ['move-node-to-workspace U']
@@ -220,7 +230,7 @@ I = '^(?!.*Built-in).*'
 M = 'Built-in'
 N = 'Built-in'
 O = 'Built-in'
-P = 'Built-in'
+P = ['Logi RallyBar', 'Built-in']
 B = 'Built-in'
 
 # 'service' binding mode declaration.

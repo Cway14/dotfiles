@@ -20,6 +20,8 @@
         unstage = reset HEAD --
         uncommit = reset --soft HEAD~1
         update = !git stash && git pull --rebase && git stash pop
+	clean = clean -e .local/ -e .local
+	cleans = clean -e .local/ -e .local
 
 [color]
         diff = auto
@@ -74,3 +76,6 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[user]
+	name = Cameron Way
+	email = cameron.way@sap.com

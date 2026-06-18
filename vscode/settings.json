@@ -1,8 +1,8 @@
 {
   "eslint.validate": ["typescript", "typescriptreact"],
   "eslint.execArgv": ["--max-old-space-size=8000"],
-  "eslint.debug": true,
-  "eslint.runtime": "node",
+  "eslint.debug": false,
+  "eslint.runtime": "/Users/I742619/.local/bin/node",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.format.enable": true,
   "files.exclude": {
@@ -26,15 +26,14 @@
     "source.fixAll.eslint": "always",
     "source.fixAll.ts": "always",
   },
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
+  "js/ts.preferences.quoteStyle": "single",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.tsserver.maxMemory": 8192, // TODO: use #typescript.tsserver.nodePath# to run TS Server with a custom Node installation.
   "explorer.confirmDelete": false,
-  "git.autofetch": true,
+  "git.autofetch": false,
   "editor.minimap.enabled": false,
-  "vim.useSystemClipboard": true,
-  "vim.leader": " ",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features",
@@ -55,60 +54,42 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features",
   },
-  "editor.largeFileOptimizations": false,
+  "editor.largeFileOptimizations": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "jestrunner.jestPath": "node_modules/jest/bin/jest",
-  // "jestrunner.jestPath": "webpack/node_modules/jest/bin/jest", // for orca_cloud
-  // "jestrunner.projectPath": "webpack",
   "jestrunner.configPath": "jest.config.js",
   "jestrunner.runOptions": [],
   "jest.enable": false,
-  "rss.accounts": {
-    "640927b0-c8ed-11ee-989c-c7f2680ea036": {
-      "name": "Default",
-      "type": "local",
-      "feeds": [],
-    },
-  },
-  "java.checkstyle.version": "",
-  "maven.terminal.useJavaHome": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
   "gitlens.remotes": [
     {
       "domain": "github.wdf.sap.corp",
       "type": "GitHub",
     },
   ],
-  "java.debug.settings.showQualifiedNames": true,
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.rulers": [80, 120],
-  "redhat.telemetry.enabled": true,
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
   "workbench.editor.editorActionsLocation": "titleBar",
-  "terminal.integrated.scrollback": 1000000,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.confirmOnExit": "never",
+  "terminal.integrated.enablePersistentSessions": false,
   "files.trimTrailingWhitespaceInRegexAndStrings": false,
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailingWhitespace": false,
   },
-  // "editor.formatOnSaveMode": "modifications",
   "remote.SSH.remotePlatform": {
     "my-app.devspace": "linux",
   },
   "editor.linkedEditing": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "vim.smartRelativeLine": false,
   "window.newWindowProfile": "Default",
-  "workbench.colorTheme": "One Dark Pro Night Flat",
-  "gitlens.home.preview.enabled": false,
   "editor.accessibilitySupport": "off",
   "files.associations": {
     "*.snapshot": "jest-snapshot",
     "*.symlink": "shellscript",
     "*.xsjslib": "javascript",
+    "*.csv": "csv",
+    "*.tsv": "tsv"
   },
   "lazygit-vscode.lazygitPath": "~/bin/lazygit",
   "lazygit-vscode.panels": {
@@ -122,7 +103,6 @@
   },
   "find-it-faster.general.useTerminalInEditor": true,
   "find-it-faster.general.killTerminalAfterUse": true,
-  "github.copilot.chat.agent.thinkingTool": true,
   "chat.agent.enabled": true,
   "github.copilot.chat.languageContext.typescript.enabled": true,
   "github.copilot.chat.languageContext.inline.typescript.enabled": true,
@@ -132,25 +112,19 @@
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.activityBar.location": "top",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "explorer.confirmDragAndDrop": false,
-  "typescript.tsserver.maxTsServerMemory": 8192,
-  "workbench.iconTheme": "material-icon-theme", // TODO: use #typescript.tsserver.nodePath# to run TS Server with a custom Node installation.
   "material-icon-theme.files.associations": {
     "*.xsjslib": "javascript",
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1,
   },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java",
-  },
   "workbench.layoutControl.enabled": false,
   "workbench.navigationControl.enabled": false,
   "window.restoreWindows": "none",
   "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.todoListTool.enabled": true,
   "chat.tools.terminal.autoApprove": {
     "node": true,
     "mkdir": true,
@@ -176,7 +150,6 @@
     "npm view": true,
     "timeout": true,
   },
-  "chat.commandCenter.enabled": false,
   "debug.toolBarLocation": "commandCenter",
   "chat.agent.maxRequests": 40,
   "workbench.editor.empty.hint": "hidden",
@@ -185,9 +158,6 @@
   "chat.agent.thinkingStyle": "collapsedPreview",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "yaml.schemas": {
-    "file:///Users/I742619/.vscode/extensions/atlassian.atlascode-4.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
-  },
   "chat.tools.urls.autoApprove": {
     "https://help.sap.com": {
       "approveRequest": false,
@@ -197,25 +167,6 @@
   "workbench.editorAssociations": {
     "git-rebase-todo": "default",
   },
-  "SAP HANA Database Explorer.DatabaseList": [
-    {
-      "databaseName": "localhost (SYSTEM)",
-      "databaseKey": "hanaCloud",
-      "host": "localhost",
-      "port": "30041",
-      "identifier": "",
-      "instance": "",
-      "database": "",
-      "savePassword": true,
-      "encrypt": true,
-      "certificate": "",
-      "advancedOptions": "databaseName=;",
-      "databaseID": "4d0ec741-2a18-4128-8789-e7d3885de236",
-      "authenticateByOsUser": false,
-      "creationDate": "1767038147405",
-    },
-  ],
-  "chat.viewSessions.enabled": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -230,34 +181,35 @@
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*",
   },
-  // "errorLens.messageBackgroundMode": "none"
-  "errorLens.excludeByMessage": ["Trailing spaces not allowed."],
   "eslint.rules.customizations": [
     {
       "rule": "no-trailing-spaces",
       "severity": "off",
     },
   ],
-  "sonarlint.connectedMode.connections.sonarqube": [
-    {
-      "serverUrl": "https://sonar.tools.sap",
-      "connectionId": "https-sonar-tools-sap",
-    },
-  ],
-  "sonarlint.focusOnNewCode": true,
   "claudeCode.preferredLocation": "sidebar",
-  "sonarlint.automaticAnalysis": false,
   "git.blame.editorDecoration.enabled": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "claudeCode.selectedModel": "opus",
   "claudeCode.useTerminal": true,
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false,
+    "plaintext": true,
     "markdown": true,
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.eagerness": "medium",
+  "terminal.integrated.confirmOnKill": "never",
+  "comments.thread.confirmOnCollapse": "never",
+  "chat.notifyWindowOnConfirmation": "off",
+  "window.confirmSaveUntitledWorkspace": false,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "chat.editing.confirmEditRequestRetry": false,
+  "inlineChat.enableV2": true,
+  "chat.unifiedAgentsBar.enabled": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#006d8b",
+    "statusBar.foreground": "#ffffff"
+  }
 }

@@ -1,7 +1,7 @@
-# Set prefix to Ctrl-a (caps lock mapped to ctrl)
+# Set prefix to Ctrl-Space
 unbind C-b
-set -g prefix C-a
-bind C-a send-prefix
+set -g prefix C-Space
+bind C-Space send-prefix
 
 # More intuitive pane splitting
 bind - split-window -v -c "#{pane_current_path}"    # horizontal split (creates pane below)
@@ -19,3 +19,21 @@ setw -g mouse on
 
 set-option -g automatic-rename on
 set-option -g automatic-rename-format '#{b:pane_current_path}'
+
+# Popups
+bind p display-popup -E -w 80% -h 80% -d "#{pane_current_path}" "$SHELL"
+bind g display-popup -E -w 90% -h 90% -d "#{pane_current_path}" "lazygit"
+
+# For AI tooling
+set -g extended-keys on
+set -g focus-events on
+set -g allow-passthrough on
+set -as terminal-features 'xterm*:extkeys'
+
+# Copy/paste — pipe tmux selections to the macOS clipboard
+setw -g mode-keys vi
+set -g set-clipboard on
+
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-no-clear "pbcopy"
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-no-clear "pbcopy"
